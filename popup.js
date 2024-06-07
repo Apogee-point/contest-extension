@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     const contests = await response.json();
     let codeforces = contests.codeforces;
+    console.log(codeforces)
     let contestList = document.getElementById('contestList');
     codeforces.forEach(contest => {
         let tr = document.createElement('tr');
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         //date.textContent = contest.contest_date;
         duration.textContent = contest.duration;
         let a = document.createElement('a');
-        if(a.href !== null) a.href = contest.register_link;
+        if(a.href !== "Not Available") a.href = contest.register_link;
         else a.href = 'https://codeforces.com/contests';
         a.textContent = 'Register';
         link.appendChild(a);
