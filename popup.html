@@ -5,13 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Contests</title>
     <style>
+        .wrapper { 
+            height: 100%;
+            width: 100%;
+            left:0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+            background-size: 1800% 1800%;
+
+            -webkit-animation: rainbow 18s ease infinite;
+            -z-animation: rainbow 18s ease infinite;
+            -o-animation: rainbow 18s ease infinite;
+            animation: rainbow 18s ease infinite;
+        }
+
+        @-webkit-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @-moz-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @-o-keyframes rainbow {
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
+        @keyframes rainbow { 
+            0%{background-position:0% 82%}
+            50%{background-position:100% 19%}
+            100%{background-position:0% 82%}
+        }
         body {
             margin: 0 auto;
             min-width: 700px;
             min-height: auto;
             font-family: Arial, sans-serif;
             padding: 10px;
-            background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            /* background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
+            /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+            /* background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%); */
+            /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
+            background-image: linear-gradient(-225deg, #FFFEFF 0%, #ccfffe 100%);
         }
 
         h1 {
@@ -20,7 +61,8 @@
             text-align: center;
             /* color: black; */
             font-family: monospace;
-            background: -webkit-linear-gradient(90deg, #f12711 0%, #f5af19 100%);
+            /* background: -webkit-linear-gradient(0deg, red 20%, orange 10%, yellow 5%, green, blue, indigo, violet); */
+            background: -webkit-linear-gradient(0deg, red 40%, rgb(127, 63, 255) 70%, blue 80%, rgb(85, 32, 210) 90%, rgb(245, 137, 245) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
