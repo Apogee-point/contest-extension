@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Tab Group Bookmarker",
+    "description": "A simple extension to save and restore tab groups",
+    "permissions": [
+        "tabs",
+        "storage",
+        "bookmarks"
+    ],
+    "icons": {
+        "16":"icons/metamask.png",
+        "32":"icons/metamask_2.png",
+        "48":"icons/metamask_3.png",
+        "128":"icons/metamask_4.png"
+
+    },
+    "action": {
+        "default_icon": "icons/metamask.png",
+        "default_popup": "popup.html"
+    }
+}
